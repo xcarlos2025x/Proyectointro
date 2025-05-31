@@ -1,0 +1,100 @@
+<html>  
+    <head>
+        <style type="text/css"> 
+            body {
+                color:#fcfbf9;
+                background-color:rgb(4, 56, 77)
+            }
+            #seccion1 {
+                font-size: 60px;
+                text-align: center;
+                background-image: url(https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg);
+                background-size: 1000px 600px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+           
+            .proyecto img{
+                width: 40%
+            }
+            .proyecto {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: whitesmoke;
+                font-size: 80;
+                
+            }
+            .descripcion {
+                display: none;
+                margin-top: 10px;
+                background-color: rgba(255, 255, 255, 0.1);
+                padding: 10px;
+                border-radius: 5px;
+    
+    }
+    button {
+      background-color: #af744c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #68181c;
+    }
+    
+    
+            
+        </style>
+    </head>
+    <body>
+        <section id="seccion1">
+            <h1> Los Lenguajes de Programación
+            </h1>
+            <div> 
+            
+        </div>
+        </section>
+        <section id="proyecto">
+            <div class="proyecto">
+                <a href="https://danilo-perez31.github.io/html_github/"Target="_blank"> Ir a pagina de BMW </a>
+                <p> Java </p>
+            <img src="https://www.mytaskpanel.com/wp-content/uploads/2023/04/consulting-blog-09.webp"/>
+            <button onclick="toggleDescripcion('java')">Mostrar mas</button>
+            <div id="java" class="descripcion">
+                <p> Java es un lenguaje de programación extremadamente transferible que se utiliza en diversas plataformas y tipos de dispositivos, desde smartphones hasta televisores inteligentes . Se utiliza para crear aplicaciones móviles y web, software empresarial, dispositivos del Internet de las Cosas (IoT), juegos, big data, aplicaciones distribuidas y basadas en la nube, entre otros. </p>
+            </div>
+            <div class="proyecto">
+            <p> Python </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi5ki2O-gj8na5qsJlVJSuCp0XrdK7mT65KQ&s"/>
+            <button onclick="toggleDescripcion('python1')">Mostrar mas</button>
+            <div id="python1" class="descripcion">
+                <p>En resumen, Python es un lenguaje de programación de alto nivel, interpretado y de código abierto, conocido por su legibilidad y facilidad de uso. Es versátil y se utiliza en una amplia variedad de aplicaciones, desde desarrollo web hasta ciencia de datos. </p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <p> PHP </p>
+            <img src="https://i0.wp.com/unaaldia.hispasec.com/wp-content/uploads/2019/09/Captura-de-pantalla-de-2019-09-07-04-06-35.png?fit=983%2C633&ssl=1"/>
+            <button onclick="toggleDescripcion('php')">Mostrar mas</button>
+            <div id="php" class="descripcion">
+                <p> PHP es un lenguaje de programación para desarrollar aplicaciones y crear sitios web que conquista cada día más seguidores. Fácil de usar y en constante perfeccionamiento es una opción segura para aquellos que desean trabajar en proyectos calificados y sin complicaciones.</p>
+            </div>
+            </div>
+                           
+        </section>
+    <script>
+    function toggleDescripcion(id) {
+      var descripcion = document.getElementById(id);
+      var button = descripcion.previousElementSibling;
+      if (descripcion.style.display === "block") {
+        descripcion.style.display = "none";
+        button.textContent = "Mostrar más";
+      } else {
+        descripcion.style.display = "block";
+        button.textContent = "Mostrar menos";
+      }
+    }
+  </script>
+  
+   </body>
+</html>
